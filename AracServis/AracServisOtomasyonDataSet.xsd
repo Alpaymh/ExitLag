@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AracServisOtomasyonDataSet" targetNamespace="http://tempuri.org/AracServisOtomasyonDataSet.xsd" xmlns:mstns="http://tempuri.org/AracServisOtomasyonDataSet.xsd" xmlns="http://tempuri.org/AracServisOtomasyonDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AracServisOtomasyonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AracServisOtomasyonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AracServis.Properties.Settings.GlobalReference.Default.AracServisOtomasyonConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_araclarTableAdapter" GeneratorDataComponentClassName="vw_araclarTableAdapter" Name="vw_araclar" UserDataComponentName="vw_araclarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AracServisOtomasyonConnectionString (Settings)" DbObjectName="AracServisOtomasyon.dbo.vw_araclar" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Arac_Kodu, Marka_Adi, Model_id, Model_Adi, Model_Yili, Model_Renk FROM dbo.vw_araclar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Arac_Kodu" DataSetColumn="Arac_Kodu" />
+              <Mapping SourceColumn="Marka_Adi" DataSetColumn="Marka_Adi" />
+              <Mapping SourceColumn="Model_id" DataSetColumn="Model_id" />
+              <Mapping SourceColumn="Model_Adi" DataSetColumn="Model_Adi" />
+              <Mapping SourceColumn="Model_Yili" DataSetColumn="Model_Yili" />
+              <Mapping SourceColumn="Model_Renk" DataSetColumn="Model_Renk" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AracServisOtomasyonDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="AracServisOtomasyonDataSet" msprop:Generator_DataSetName="AracServisOtomasyonDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_araclar" msprop:Generator_RowEvHandlerName="vw_araclarRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_araclarRowDeleted" msprop:Generator_RowDeletingName="vw_araclarRowDeleting" msprop:Generator_RowEvArgName="vw_araclarRowChangeEvent" msprop:Generator_TablePropName="vw_araclar" msprop:Generator_RowChangedName="vw_araclarRowChanged" msprop:Generator_RowChangingName="vw_araclarRowChanging" msprop:Generator_TableClassName="vw_araclarDataTable" msprop:Generator_RowClassName="vw_araclarRow" msprop:Generator_TableVarName="tablevw_araclar" msprop:Generator_UserTableName="vw_araclar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Arac_Kodu" msprop:Generator_ColumnPropNameInRow="Arac_Kodu" msprop:Generator_ColumnPropNameInTable="Arac_KoduColumn" msprop:Generator_ColumnVarNameInTable="columnArac_Kodu" msprop:Generator_UserColumnName="Arac_Kodu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marka_Adi" msprop:Generator_ColumnPropNameInRow="Marka_Adi" msprop:Generator_ColumnPropNameInTable="Marka_AdiColumn" msprop:Generator_ColumnVarNameInTable="columnMarka_Adi" msprop:Generator_UserColumnName="Marka_Adi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Model_id" msprop:Generator_ColumnPropNameInRow="Model_id" msprop:Generator_ColumnPropNameInTable="Model_idColumn" msprop:Generator_ColumnVarNameInTable="columnModel_id" msprop:Generator_UserColumnName="Model_id" type="xs:short" />
+              <xs:element name="Model_Adi" msprop:Generator_ColumnPropNameInRow="Model_Adi" msprop:Generator_ColumnPropNameInTable="Model_AdiColumn" msprop:Generator_ColumnVarNameInTable="columnModel_Adi" msprop:Generator_UserColumnName="Model_Adi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Model_Yili" msprop:Generator_ColumnPropNameInRow="Model_Yili" msprop:Generator_ColumnPropNameInTable="Model_YiliColumn" msprop:Generator_ColumnVarNameInTable="columnModel_Yili" msprop:Generator_UserColumnName="Model_Yili" type="xs:short" minOccurs="0" />
+              <xs:element name="Model_Renk" msprop:Generator_ColumnPropNameInRow="Model_Renk" msprop:Generator_ColumnPropNameInTable="Model_RenkColumn" msprop:Generator_ColumnVarNameInTable="columnModel_Renk" msprop:Generator_UserColumnName="Model_Renk" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_araclar" />
+      <xs:field xpath="mstns:Arac_Kodu" />
+      <xs:field xpath="mstns:Marka_Adi" />
+      <xs:field xpath="mstns:Model_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
